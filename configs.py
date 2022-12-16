@@ -7,12 +7,12 @@ import os
 class Config(object):
     API_ID = int(os.getenv("API_ID", 15823382))
     API_HASH = os.getenv("API_HASH", "016d5e115a06ddfb6121823d72ae4d8c")
-    BOT_TOKEN = os.getenv("BOT_TOKEN", "5580813031:AAEyAVNcJoK5HMy45c9Q-Hk13Tfqg7O5p3U")
+    BOT_TOKEN = os.getenv("BOT_TOKEN", "5580813031:AAHy8E12lcWXKsZdY9pjroSU983zIYkvxNQ")
     BOT_SESSION_NAME = os.getenv("BOT_SESSION_NAME", "MdiskSearchRobot")
-    USER_SESSION_STRING = os.getenv("USER_SESSION_STRING", "1BVtsOHgBu7qGq--BpwZe41e61YdqS1k_tkRXboFQ6TzKCA8GK2VkZeDE0KbmAmdFDsvf6xgu9sI5WgbB757ldqPmmAxctfLRNrkTpFEAeaiG9ZGFUFzSjhqLDW4EnAx8_xzAEEIkXPzU85xanA4fcRMR13IoWcXC6FbpiIPVGQvk4klu9rjCgggteb5D-C6MEJj-K1gN5DoqVgnMGNO1s_yCIr-_kyOdal049lQsMGAeV7HOoBWFL6puYwiBUlqcgAm77CB6TAalSgY_kk_MFyrhByELClng5eyAZ36hfTCtuHTLO0aA0Pq2GvWG4b8XgvGPfQgLSLq8MW9qPASqSL6gbd6-KI8=")
+    USER_SESSION_STRING = os.getenv("USER_SESSION_STRING", "1BVtsOHwBuxROh2qr-6BcP1UCRZfkcHIluok6dd7WUjs5xffAzM-G14JDwcoMZgDRmvb6upddiRv3andGtavOznnsJgqOEtHnX-q4Xmj0xzV3tD_-DsUKQaif5ZyhsQC2vuykhhX06G4QojhbZx93Tp97W3qvxydhHJ_uYdh8zAYlbt0yzVf4crnhs5aKiAEcbG_OnbGzl-Xr7wl5F7GU13GgPZhyWKgJY2rgj6DO_oE78vGIHfe2EhQAqm4u4nTj-k_C0qRrVwo2fkLkaYZ0AHWjl2YmsYjouoEQ4AqcK5Kz7tyxhsL-kOPhxGf0lwFHOHn1Hnv3Dp65q1bgOVJG_cTpl1QF3rM=")
     CHANNEL_ID = int(os.getenv("CHANNEL_ID", -1001631279048))
-    BOT_USERNAME = os.getenv("tlgdirectmovies_bot")
-    BOT_OWNER = int(os.getenv("tlgbotsowner"))
+    BOT_USERNAME = "tlgdirectmovies_bot"
+    BOT_OWNER = 1805398747
 #    OWNER_USERNAME = os.getenv("tlgbotsowner")
     BACKUP_CHANNEL = os.getenv("BACKUP_CHANNEL")
 #    GROUP_USERNAME = os.getenv("GROUP_USERNAME")
@@ -36,7 +36,7 @@ Fᴏʀ Mᴏʀᴇ Iɴꜰᴏ Cʟɪᴄᴋ Oɴ Hᴇʟᴘ ✅''')
     UPDATES_CHANNEL_USERNAME = os.getenv("UPDATES_CHANNEL_USERNAME", "Mdiskbotsupport")
     FORCE_SUB = os.getenv("FORCE_SUB", "True")
     AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", 300))
-    MDISK_API = os.getenv("MDISK_API", "XXgy4PoF35VECI7kZgTb")
+    MDISK_API = os.getenv("MDISK_API", "")
     VERIFIED_TIME  = int(os.getenv("VERIFIED_TIME", "1"))
     ABOUT_BOT_TEXT = os.getenv("ABOUT_TEXT", '''I ᴏɴʟʏ ꜱʜᴀʀᴇ ᴛʜᴇ ᴘᴏꜱᴛ ꜰʀᴏᴍ ᴘᴇᴏᴘʟᴇ'ꜱ ᴄʜᴀɴɴᴇʟ! ᴡʜᴏ ᴍᴀᴅᴇ ᴍᴇ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴀᴛ ᴄʜᴀɴɴᴇʟ, i ᴅᴏ ɴᴏᴛ ꜱᴛᴏʀᴇ ᴀɴʏ ꜰɪʟᴇꜱ ᴏʀ ᴛᴇxᴛ ɪɴ  ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ.✅
 
