@@ -1,5 +1,3 @@
-# (c) @RoyalKrrishna
-
 from os import link
 from telethon import Button
 from configs import Config
@@ -11,6 +9,7 @@ from plugins.tgraph import *
 from helpers import *
 from telethon import TelegramClient, events
 import urllib.parse
+from mdiskconverter import *
 from telethon.errors import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
 import re
@@ -46,9 +45,7 @@ async def message_handler(event):
         # Force Subscription
         if  not await get_user_join(event.sender_id):
             haha = await event.reply(f'''**Hey! {event.sender.first_name} 😃**
-
 **You Have To Join Our Update Channel To Use Me ✅**
-
 **Click Bellow Button To Join Now.👇🏻**''', buttons=Button.url('🍿Updates Channel🍿', f'https://t.me/{Config.UPDATES_CHANNEL_USERNAME}'))
             await asyncio.sleep(Config.AUTO_DELETE_TIME)
             return await haha.delete()
@@ -92,9 +89,10 @@ async def message_handler(event):
         async for msg_list in AsyncIter(search):
             async for msg in msg_list:
                 c += 1
-                f_text = re.sub("__|\*", "", msg.text)
-
+                text = re.sub("__|\*", "", msg.text)
+                f_text = await mdisk_convertor(text)
                 f_text = await link_to_hyperlink(f_text)
+
                 answer += f'\n\n\n✅ PAGE {c}:\n\n━━━━━━━━━\n\n' + '' + f_text.split("\n", 1)[0] + '' + '\n\n' + '' + f_text.split("\n", 2)[
                     -1] + "\n\n"
                 
@@ -105,7 +103,6 @@ async def message_handler(event):
 
         if c <= 0:
             answer = f'''**No Results Found For {event.text}**
-
 **Type Only Movie Name 💬**
 **Check Spelling On** [Google](http://www.google.com/search?q={event.text.replace(' ', '%20')}%20Movie) 🔍
     '''
@@ -143,7 +140,7 @@ async def message_handler(event):
     except Exception as e:
         print(e)
         await txt.delete()
-        result = await event.reply("Some error occurred while searching for movie")
+        result = await event.reply(f"Some error occurred while searching for movie\n\nError {e}")
         await asyncio.sleep(Config.AUTO_DELETE_TIME)
         await event.delete() 
         return await result.delete()
