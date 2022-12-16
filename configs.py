@@ -10,7 +10,7 @@ class Config(object):
     BOT_TOKEN = os.getenv("BOT_TOKEN", "5918078029:AAHOlk_opieJ0cgVOMxOHdoHufraiaYkZHU")
     BOT_SESSION_NAME = os.getenv("BOT_SESSION_NAME", "MdiskSearchRobot")
     USER_SESSION_STRING = os.getenv("USER_SESSION_STRING", "1BVtsOHwBuwiE-fcv9dnvGrdMAj5OvSJ_VoGI_CPWne2OL035Tg8Z_kYyxJpwtoLYorJdjPfqsUAaQBYl1Kvu9w8akyXFQxa3qd7fk7jQqwXVKK7MMLBrrhvpOxKigFbY5MhOIeTl_5ybTGhJXWY63lYS2f_8TvucRebSAQy74WGNl9QkgUSSH_t44gGZ3ktnTYnA6GAl5ufh42u6gdmSspmRjtB_SNHK9W5il4ClPHKo5o24M6KUmoWYxb5q602Gu44cESeZD5UEvY3Od2p8WVisOyt5YMMPL1_D7kh4stoeQOCPhdx_ecsL4Pd8gjEIH6zzSHz-NO-qBEICALT9X9GPahr-kZ4=")
-    CHANNEL_ID = int(os.getenv("CHANNEL_ID", -1001631279048))
+    CHANNEL_ID = int(os.getenv("CHANNEL_ID", "-1001631279048"))
     BOT_USERNAME = os.getenv("BOT_USERNAME", "Mdisk_search_re_bot")
     BOT_OWNER = int(os.getenv("BOT_OWNER", "5104293442"))
 #    OWNER_USERNAME = os.getenv("OWNER_USERNAME", "tlgbotsowner")
