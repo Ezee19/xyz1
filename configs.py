@@ -11,7 +11,7 @@ class Config(object):
     BOT_SESSION_NAME = os.getenv("BOT_SESSION_NAME", "MdiskSearchRobot")
     USER_SESSION_STRING = os.getenv("USER_SESSION_STRING", "1BVtsOHwBu4f5dEx9vQ4f7MhAUjozEP1tF6abbZxddO4fp8ddc2a1elX1ldfWw1rreweJ-3tmd_j0frs8FXyU-lLTsyPtppF5-v1gmQbfmk9WGZzAgxw945ORaOn6gkhNqeV2VutPEh_yqEeqIs71umkkDvADFnBKlDYtNKtNzQq8BbPzP0uEQnmr4CO-autl8cNGEfuJdD9h_y7rR7WpPm41vgash6wtCqmj2hBvPmiDSnCdzjt8pGC20fsKHdvgIqsh9xhwrnabs1xvyU3ygxuFP9aIIBvESCCLoUIrH7xyzpHw2jOD-0TSNaTofZD_7PMNRNJM0Zw7ekCji9dpDwnYzG16mzo=")
     CHANNEL_ID = int(os.getenv("CHANNEL_ID", -1001631279048))
-    BOT_USERNAME = "tlgdirectmovies_bot"
+    BOT_USERNAME = "Mdisk_search_re_bot"
     BOT_OWNER = 5104293442
 #    OWNER_USERNAME = os.getenv("tlgbotsowner")
     BACKUP_CHANNEL = os.getenv("BACKUP_CHANNEL")
