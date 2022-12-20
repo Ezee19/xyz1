@@ -1,6 +1,11 @@
-echo "Cloning Repo...."
-git clone https://github.com/Ezee19/xyz.git /xyz
+if [ -z $UPSTREAM_REPO ]
+then
+  echo "Cloning https://github.com/Ezee19/xyz.git /xyz
+else
+  echo "Cloning Custom Repo from $UPSTREAM_REPO "
+  git clone $UPSTREAM_REPO /xyz
+fi
 cd /xyz
-pip3 install -r requirements.txt
+pip3 install -U -r requirements.txt
 echo "Starting Bot...."
-python3 main.py
+python3 bot.py
