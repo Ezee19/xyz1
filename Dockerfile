@@ -14,8 +14,8 @@ COPY requirements.txt /requirements.txt
 # Installing Requirements
 RUN cd /
 RUN pip3 install -U -r requirements.txt
-RUN mkdir /xyz
-WORKDIR /xyz
+RUN mkdir /xyz1
+WORKDIR /xyz1
 COPY start.sh /start.sh
 
 # Running MessageSearchBot
