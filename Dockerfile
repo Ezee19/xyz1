@@ -1,22 +1,8 @@
-# Python Based Docker
-FROM python:latest
+FROM python:3.10.5-slim-buster
 
-# Installing Packages
-RUN apt update && apt upgrade -y
-RUN apt install git curl python3-pip ffmpeg -y
+WORKDIR .
+COPY . .
 
-# Updating Pip Packages
-RUN pip3 install -U pip
+RUN pip3 install -r requirements.txt
 
-# Copying Requirements
-COPY requirements.txt /requirements.txt
-
-# Installing Requirements
-RUN cd /
-RUN pip3 install -U -r requirements.txt
-RUN mkdir /xyz1
-WORKDIR /xyz1
-COPY start.sh /start.sh
-
-# Running MessageSearchBot
-CMD ["/bin/bash", "/start.sh"]
+CMD ["bash", "start.sh"]
